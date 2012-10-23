@@ -20,6 +20,14 @@
 			<version>0.1.1</version>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>clojars.org</id>
+			<name>Clojars repository</name>
+			<url>https://clojars.org/repo</url>
+		</repository>
+	</repositories>
 
 	<parent>
 		<groupId>net.mikera</groupId>
