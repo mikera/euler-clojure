@@ -1,6 +1,7 @@
 (ns euler.euler
   (:use [clojure.math.numeric-tower])
   (:use [clojure.tools.macro])
+  (:use [clojure.test])
   (:use [clojure.set]))
 
 (set! *warn-on-reflection* true)
@@ -20,7 +21,7 @@
       #(or (multiple-of? 3 %) (multiple-of? 5 %))
       (range 1 n)))) 
 
-; (prob1 1000)
+;; (prob1 1000)
 
 
 ;==============================================
@@ -51,7 +52,7 @@
       even?
       (upto n fibs)))) 
      
-; (prob2 4000000)
+;; (prob2 4000000)
 
 ;==============================================
 ; problem 3
@@ -1376,7 +1377,6 @@
 ;==============================================
 ; Problem 41
 ;
-
 (defn prob41 [n]
   (largest 
     (filter 
