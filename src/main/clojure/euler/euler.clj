@@ -224,6 +224,16 @@
 
 ; (prob5 20)
 
+;; alternative prob5 solution
+;; brute force approach for http://stackoverflow.com/questions/14668272/what-can-i-do-to-speed-up-this-code
+
+(defn euler5 []
+  (loop [n (long 1) 
+         d (long 2)]
+    (if (== 0 (unchecked-remainder-int n d))
+      (if (>= d 20) n (recur n (inc d)))
+      (recur (inc n) 2))))
+
 ;============================================== 
 ; problem 6
 
